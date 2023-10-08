@@ -1,0 +1,48 @@
+.header {
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  background-color: rgb(229, 226, 226);
+  color: #001f3f;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.centered {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.full-width {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.custom-button {
+  background-color: #001f3f;
+  color: white;
+  width: 60px;
+  height: 30px;
+  border: none;
+}
+
+.label-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.reg-label {
+  text-align: right;
+}
+
+.label-left {
+  text-align: left;
+}
