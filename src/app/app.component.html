@@ -1,26 +1,12 @@
-<div class="header">
-  <h1>{{headerTitle}}</h1>
-</div>
-
 <form [formGroup]="loginForm">
-  <div class="container">
-    <div class="centered">
-      <h1>Login</h1>
-    </div>
-    <label for="username">Username:</label>
-    <br><br>
-    <input type="text" class="full-width" value="username" formControlName="username" placeholder="Username">
+  
+    <input type="text" value="EmpName" formControlName="EmpName" placeholder="Name" > <br><br>
+    <input type="text" value="EmpAge" formControlName="EmpAge" placeholder= "Age"> <br><br>
+    <input type="text" value="EmpExp" formControlName="EmpExp" placeholder= "Experience" > <br><br>
+    <input type="text" value="EmpSal" formControlName="EmpSal" placeholder= "Salary" > <br><br>
+    <input type="text" value="EmpExSal" formControlName="EmpExSal" placeholder= "Expected Salary"> <br><br>
+    <input type="text" value="EmpAdd" formControlName="EmpAdd" placeholder= "Address"> <br><br>
    
-    <br><br>
-    <label for="password">Password:</label> 
-    <br><br>
-    <input type="password" class="full-width" value="password" formControlName="password" placeholder="Password"><br><br>
-    <div class="label-container">      
-      <label class="label-left" for="rem">Remember me</label> 
-      <input class="label-left" type="checkbox" value="rem">
-      <label class="reg-label">Register here</label>
-    </div>
-    <button type="submit" (click)="login()" class="custom-button">{{ buttonTitle }}</button>
-    
-  </div>
+    <button type="submit" (click)="login()"> Submit </button>
+ 
 </form>

@@ -13,16 +13,17 @@ export class AppComponent implements OnInit {
     private formBuilder: FormBuilder
   ){}
   
-  headerTitle = "Login Form";
-  buttonTitle = "Submit";
-
   loginForm!: FormGroup;
 
   ngOnInit():void{
     console.log('onit called');
     this.loginForm = this.formBuilder.group({
-      username: ['Jack'],
-      password: new FormControl('')
+      EmpName: [''],
+      EmpAge : new FormControl(''),
+      EmpExp : [''],
+      EmpSal : [''],
+      EmpExSal : [''],
+      EmpAdd : ['']
     });
   }
   login()
