@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
   ngOnInit():void{
     console.log('onit called');
     this.loginForm = this.formBuilder.group({
-      username: ['Smriti'],
+      username: ['Jack'],
       password: new FormControl('')
     });
   }
