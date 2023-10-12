@@ -1,0 +1,15 @@
+
+<ng-container *ngIf="loginForm">
+
+<form [formGroup]="loginForm">
+    <br><br>
+<input type="text" value="EmpName" formControlName="EmpName" placeholder="Name" > <br><br>
+<input type="text" value="EmpAge" formControlName="EmpAge" placeholder= "Age"> <br><br>
+<input type="text" value="EmpExp" formControlName="EmpExp" placeholder= "Experience" > <br><br>
+<input type="text" value="EmpSal" formControlName="EmpSal" placeholder= "Salary" > <br><br>
+<input type="text" value="EmpExSal" formControlName="EmpExSal" placeholder= "Expected Salary"> <br><br>
+<input type="text" value="EmpAdd" formControlName="EmpAdd" placeholder= "Address"> <br><br>
+
+<button type="submit" (click)="login()"> Submit </button>
+</form>
+</ng-container>

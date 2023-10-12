@@ -1,0 +1,16 @@
+<ng-container *ngIf="loginForm">
+    <form [formGroup]="loginForm">
+        <br><br>
+        <input type="text" formControlName="userName" placeholder="username" /><br><br>
+        <span class="error" *ngIf="loginForm.get('userName')?.errors && loginForm.get('userName')?.hasError('required')">Invalid username</span>
+        <input type="text" formControlName="password" placeholder="password" /><br><br>
+        <ng-container *ngIf="loginForm.get('password')?.errors && loginForm.get('password')?.hasError('minlength')">
+            <div class="error">Minimum 2 characters required</div>
+        </ng-container>
+        <ng-container *ngIf="loginForm.get('password')?.errors && loginForm.get('password')?.hasError('maxlength')">
+            <div class="error">Maximum characters exceeded</div>
+        </ng-container>
+        <br><br>
+        <input type="button" [disabled]="!loginForm.valid" (click)="login()" value="login">
+    </form>
+</ng-container>
